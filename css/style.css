@@ -33,8 +33,17 @@ body{
 }
 
 #sc1{
+
     grid-area: sc1;
+    background-color: aquamarine;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 15% 15%;
+    background-image: url("../img/1.jpg");
+    margin: 20px;
+    background-size: 240px;
+
 }
+
 
 #sc2{
     grid-area: sc2;
