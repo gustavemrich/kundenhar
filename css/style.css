@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&family=Permanent+Marker&family=Satisfy&display=swap');
 
 body{
     margin: 0%;
@@ -13,7 +14,7 @@ body{
     height: 100vh;
     width: 100vw;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 60vh 10vh 15vh;
+    grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
     'sc1 sc2 sc3 sc4 sc5'
@@ -21,8 +22,21 @@ body{
     'as2 ft ft ft as3';
 }
 
+img{
+    object-fit: cover;
+    height: 420px;
+}
+
+#navigation img{
+    object-fit: cover;
+    height: 140px;
+
+}
+
 #navigation{
     grid-area: nav;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -54,11 +68,7 @@ body{
     background-color: darkseagreen;
 }
 
-img{
-    object-fit: cover;
-    height: 420px;
-    align-self: flex-start;
-}
+
 
 #sc3{
     grid-area: sc3;
@@ -112,5 +122,12 @@ img{
 h2{
     font-family: 'Caveat', cursive;
     white-space: nowrap;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    white-space: nowrap;
+    font-size: 80px;
 }
 
