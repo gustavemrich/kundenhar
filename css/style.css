@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&family=Satisfy&display=swap');
+
 body{
     margin: 0%;
     width: 100vw;
@@ -11,12 +13,11 @@ body{
     height: 100vh;
     width: 100vw;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows: 15vh 10vh 60vh 15vh;
+    grid-template-rows: 15vh 60vh 10vh 15vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
-    'div div div div div'
     'sc1 sc2 sc3 sc4 sc5'
-    /* 'sc6 sc7 sc8 sc9 sc10' */
+    'sc6 sc7 sc8 sc9 sc10'  
     'as2 ft ft ft as3';
 }
 
@@ -35,22 +36,33 @@ body{
     grid-area: div;
 }
 
+.section{
+    background-color: aquamarine;
+    display: flex;
+
+}
+
 #sc1{
     grid-area: sc1;
+    background-color: aqua;
+
 }
 
 
 #sc2{
     grid-area: sc2;
+    background-color: darkseagreen;
 }
 
 img{
     object-fit: cover;
-    height: 300px;
+    height: 420px;
+    align-self: flex-start;
 }
 
 #sc3{
     grid-area: sc3;
+
 }
 #sc4{
     grid-area: sc4;
@@ -59,22 +71,31 @@ img{
     grid-area: sc5;
 }
 
-/* #sc6{
+#sc6{
     grid-area: sc6;
+    display: flex;
+    justify-content: space-around;
 }
 #sc7{
     grid-area: sc7;
-    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
 }
 #sc8{
     grid-area: sc8;
+    display: flex;
+    justify-content: space-around;
 }
 #sc9{
     grid-area: sc9;
+    display: flex;
+    justify-content: space-around;
 }
 #sc10{
     grid-area: sc10;
-} */
+    display: flex;
+    justify-content: space-around;
+}
 
 #as2{
     grid-area: as2;
@@ -88,4 +109,8 @@ img{
     grid-area: as3;
 }
 
+h2{
+    font-family: 'Caveat', cursive;
+    white-space: nowrap;
+}
 
