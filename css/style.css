@@ -8,7 +8,7 @@ body{
     background-color: black;
 }
 
-#wrapper{
+#wrappermain{
     background-color: #FF4081;
     display:grid;
     height: 100vh;
@@ -17,9 +17,39 @@ body{
     grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
-    'sc1 sc2 sc3 sc4 sc5'
+    'p1 p2 p3 p4 p5'
     'sc6 sc7 sc8 sc9 sc10'  
     'as2 ft ft ft as3';
+}
+
+#wrapperex{
+    background-color: #FF4081;
+    display:grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 20vh 60vh 10vh 10vh;
+    grid-template-areas:   
+    'nav h1 h1 h1 as1'
+    'ex ex ex ex ex'
+    'y y y y y'  
+    'z z z z z';
+}
+
+
+#exh{
+    grid-area: ex;
+    display: flex;
+    justify-content: center;
+}
+
+#exh img{
+    border: 8px solid #21282b;
+}
+
+section img{
+    border: 8px solid #21282b;
+
 }
 
 img{
@@ -40,6 +70,10 @@ img{
 
 }
 
+#as1{
+    grid-area: as1;
+}
+
 #header{
     grid-area: h1;
     display: flex;
@@ -56,29 +90,29 @@ img{
 
 }
 
-#sc1{
-    grid-area: sc1;
+#p1{
+    grid-area: p1;
     background-color: aqua;
 
 }
 
 
-#sc2{
-    grid-area: sc2;
+#p2{
+    grid-area: p2;
     background-color: darkseagreen;
 }
 
 
 
-#sc3{
-    grid-area: sc3;
+#p3{
+    grid-area: p3;
 
 }
-#sc4{
-    grid-area: sc4;
+#p4{
+    grid-area: p4;
 }
-#sc5{
-    grid-area: sc5;
+#p5{
+    grid-area: p5;
 }
 
 #sc6{
