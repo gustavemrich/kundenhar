@@ -3,54 +3,105 @@
 
 body{
     margin: 0;
-    width: 100vw;
+    padding: 0;
+    width: 99åvw;
     height: 100vh;
     background-color: black;
+    background-color: #FF4081;
 }
 
 #wrappermain{
     background-color: #FF4081;
     display:grid;
     height: 100%;
-    width: 100%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 95%;
+    grid-template-columns: 20% 20% 20% 20% 1fr;
     grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
     'p1 p2 p3 p4 p5'
     'sc6 sc7 sc8 sc9 sc10'  
-    'as2 ft ft ft as3';
+    'ft ft ft ft ft';
 }
 
 #wrapperex{
     background-color: #FF4081;
+    padding: 0;
     display:grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: 20vw 25vw 15vw 25vw 15vw;
+    grid-template-columns: 20vw 25vw 15vw 25vw 1fr;
     grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
     'ex ex ex ex ex'
-    'x x x y y'  
-    'z z z z z';
+    'x x x x x'  
+    'ft ft ft ft ft';
 }
 
 #wrappermarket{
     background-color: #FF4081;
     display:grid;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20vh 60vh 10vh 10vh;
+    grid-template-rows: 20vh 60vh 10vh 40vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
     's1 s2 s3 s4 s5'
     'c1 c2 c3 c4 c5' 
-    'x x x x x';
+    'buy buy x sell sell'
+    'ft ft ft ft ft';
 
+}
+
+footer{
+    grid-area: ft;
+    display: flex;
+}
+
+#buy{
+    grid-area: buy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li{
+    font-size: 25px;
+}
+
+
+#kop{
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    border: 8px solid rgb(255, 0, 0);
+}
+
+#salj{
+    width:70%;
+    height: 50%;
+    object-fit: cover;
+    border: 8px solid rgb(0, 255, 98);
+
+}
+
+#sell{
+    grid-area: sell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sale{
