@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Lobster&family=Permanent+Marker&family=Satisfy&display=swap');
 
 body{
-    margin: 0%;
+    margin: 0;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -11,9 +11,9 @@ body{
 #wrappermain{
     background-color: #FF4081;
     display:grid;
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
@@ -27,24 +27,125 @@ body{
     display:grid;
     height: 100vh;
     width: 100vw;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-columns: 20vw 25vw 15vw 25vw 15vw;
     grid-template-rows: 20vh 60vh 10vh 10vh;
     grid-template-areas:   
     'nav h1 h1 h1 as1'
     'ex ex ex ex ex'
-    'y y y y y'  
+    'x x x y y'  
     'z z z z z';
+}
+
+#wrappermarket{
+    background-color: #FF4081;
+    display:grid;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20vh 60vh 10vh 10vh;
+    grid-template-areas:   
+    'nav h1 h1 h1 as1'
+    's1 s2 s3 s4 s5'
+    'c1 c2 c3 c4 c5' 
+    'x x x x x';
+
+}
+
+.sale{
+    color: greenyellow;
+    font-size: 30px;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+}
+
+#s1{
+    grid-area: s1;
+}
+
+#s2{
+    grid-area: s2;
+}
+
+#s3{
+    grid-area: s3;
+}
+
+#s4{
+    grid-area: s4;
+}
+
+#s5{
+    grid-area: s5;
+}
+
+
+#c1{
+    grid-area: c1;
+    display: flex;
+    justify-content: space-around;
+}
+#c2{
+    grid-area: c2;
+    display: flex;
+    justify-content: space-around;
+}
+#c3{
+    grid-area: c3;
+    display: flex;
+    justify-content: space-around;
+}
+#c4{
+    grid-area: c4;
+    display: flex;
+    justify-content: space-around;
+}
+#c5{
+    grid-area: c5;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 #exh{
     grid-area: ex;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 25% 1;
+    grid-template-rows: 25% 75%;
+    grid-template-areas: 'show shtl'
+    'show etxt';
+}
+
+
+#share{
+    grid-area: sh;
 }
 
 #exh img{
     border: 8px solid #21282b;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    grid-area: show;
+}
+
+#showcasetitle{
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+    margin: 0%;
+    grid-area: shtl;
+}
+
+#showcasetext{
+    grid-area: etxt;
+    text-align: left;
+    margin: 30px;
+
 }
 
 section img{
@@ -54,7 +155,9 @@ section img{
 
 img{
     object-fit: cover;
-    height: 420px;
+    /* height: 420px; */
+    width: 100%;
+    height: 100%;
 }
 
 #navigation img{
@@ -72,6 +175,12 @@ img{
 
 #as1{
     grid-area: as1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    margin: 10px;
+
 }
 
 #header{
@@ -92,14 +201,12 @@ img{
 
 #p1{
     grid-area: p1;
-    background-color: aqua;
 
 }
 
 
 #p2{
     grid-area: p2;
-    background-color: darkseagreen;
 }
 
 
@@ -156,6 +263,7 @@ img{
 h2{
     font-family: 'Caveat', cursive;
     white-space: nowrap;
+
 }
 
 h1{
@@ -164,4 +272,14 @@ h1{
     white-space: nowrap;
     font-size: 80px;
 }
+
+#exhibitionimage{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+  }
 
